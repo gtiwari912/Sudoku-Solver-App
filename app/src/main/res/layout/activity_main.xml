@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="34dp"
+        android:text="Sudoko Solver"
+        android:background="@color/teal_700"
+        android:textStyle="bold"
+        android:fontFamily="serif-monospace"
+        android:textColor="@color/white"
+        android:gravity="center"/>
+
+
+
+    <TableLayout
+        android:id="@+id/MainBoard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:clickable="true"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:nestedScrollingEnabled="false">
+
+        <TableRow
+            android:id="@+id/row0"
+            style="@style/TableRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/row1"
+            style="@style/TableRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/row2"
+            style="@style/TableRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/row3"
+            style="@style/TableRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/row4"
+            style="@style/TableRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/row5"
+            style="@style/TableRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/row6"
+            style="@style/TableRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/row7"
+            style="@style/TableRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/row8"
+            style="@style/TableRow"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+            <TextView android:text="0"
+                style="@style/CellDesign"/>
+        </TableRow>
+
+    </TableLayout>
+
+    <EditText
+        android:id="@+id/inputNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="Enter the Number"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="50dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="45dp">
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:layout_marginRight="10dp"/>
+        <Button
+            android:id="@+id/btnSolve"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Solve"
+            android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
